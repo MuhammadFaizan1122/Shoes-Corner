@@ -1,0 +1,43 @@
+[debug] [2021-02-19T19:31:42.264Z] ----------------------------------------------------------------------
+[debug] [2021-02-19T19:31:42.276Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Faizan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-19T19:31:42.278Z] CLI Version:   9.4.0
+[debug] [2021-02-19T19:31:42.279Z] Platform:      win32
+[debug] [2021-02-19T19:31:42.279Z] Node Version:  v10.18.0
+[debug] [2021-02-19T19:31:42.284Z] Time:          Sat Feb 20 2021 00:31:42 GMT+0500 (Pakistan Standard Time)
+[debug] [2021-02-19T19:31:42.284Z] ----------------------------------------------------------------------
+[debug] [2021-02-19T19:31:42.285Z] 
+[debug] [2021-02-19T19:31:42.324Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-19T19:31:42.327Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Shopify\shopify
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using hosttesting-c94d5. 
+[debug] [2021-02-19T19:31:51.004Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hosttesting-c94d5 [none]
+[debug] [2021-02-19T19:31:51.758Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hosttesting-c94d5 403
+[debug] [2021-02-19T19:31:51.759Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hosttesting-c94d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-02-19T19:31:51.763Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-02-19T19:31:52.176Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Faizan\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Faizan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: Failed to get Firebase project hosttesting-c94d5. Please make sure the project exists and your account has permission to access it.
